@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>门户网站-天软BBS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="天软BBS，天软BBS, 如来佛组Plus">
+    <meta name="description" content="天软BBS">
+    <meta name="keywords" content="天软BBS，天软BBS">
+    <meta name="description" content="天软BBS">
+    <!--为了确保所有设备能够正确渲染和触摸缩放，请将响应式 viewport meta 标签 添加到 <head> 标签中-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style -->
+    <link rel="stylesheet" th:href="@{/css/mse.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.lug.ustc.edu.cn/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/avatar/favicon.png" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img alt="wocapi" src="images/avatar/logo.png" class="img-fluid logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="icon ion-md-menu"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team-members">有关我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#item">BBS简介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">合作伙伴</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/index}">BBS论坛</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/toLogin}" role="button">
+                        管理系统
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="bg-light">
+    <div class="container">
+        <div class="row  d-flex">
+            <div class="col-lg-6 col-md-12 justify-content-center align-self-center">
+                <h1>天软未名</h1>
+                <p class="topmargin-sm">进入你想发帖的版面，页面底部就能快捷发帖。输入标题、正文，点击发布就能成功发帖！如果你想体验插入图片、上传附件等功能，可以点击发帖框右上角的链接切换到完整模式。
+                    注意，发帖前千万先阅读版规，不符合规定的帖子会被版务删除，你在版面的发帖权限也有可能被封禁哦。</p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="https://style.codingce.com.cn/img/bannerb.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team-members">
+    <div class="container">
+        <h3>一群直男宅女</h3>
+        <p class="topmargin-sm">
+            我们是如来佛组Plus
+            <br>我们喜欢带着笔记本仗剑天涯。。。
+        <p>沈从文的故乡——边城有一条河叫做沱江
+            <br>我渴望在沱江的上游找块地盖个青瓦房
+            <br>院子里种一颗很大的银杏树
+        <p>当深秋来临
+            <br>满院的金黄色被秋风扫起
+            <br>会有很多个房间
+            <br>等待着同样喜欢仗剑的你
+            <br>喝喝茶 聊聊天 写写代码。。。
+        </p>
+        </p>
+        <div class="row topmargin-lg">
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Li Ze</h4>
+                        <p>不会Node、不会PHP，也不会全栈。</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-li.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Ma Xinze</h4>
+                        <p>啥？你想找我设计架构？</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-ma.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Hao Yufei</h4>
+                        <p>啥？你要找我设计UI？</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-hao.jpg" class="img-fluid">
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Wen Wang</h4>
+                        <p>不会bootstrap、不会vue，更不会react。。</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-wen.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Zeng Zixi</h4>
+                        <p>要跟我一起写Hello World吗？</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-zeng.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="member-container">
+                    <div class="member-information">
+                        <h4>Zhao Jiaxin</h4>
+                        <p>懵懵懵懵懵懵懵懵懵。。</p>
+
+                    </div>
+                    <img src="https://style.codingce.com.cn/img/zjx/member-zhao.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<skill id="skill">
+    <div class="container text-center">
+        <h3>BBS有哪些技能？</h3>
+        <div class="row text-center topmargin-lg">
+            <div class="col-md-4 divider-right">
+                <div class="skill-btn">
+                    <a href="#contact">
+                        <h6>论坛 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>活着努力干</p>
+                    <p>死了无遗憾</p>
+                    <p>Hello World!</p>
+                </div>
+            </div>
+            <div class="col-md-4 divider-right">
+                <div class="skill-btn">
+                    <a href="#contact">
+                        <h6>学术研究 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>可视化</p>
+                    <p>数据分析</p>
+                    <p>数据存储和管理</p>
+                </div>
+            </div>
+            <div class="col-md-4 divider-right">
+                <div class="skill-btn">
+                    <a href="#contact">
+                        <h6>资源库 <i class="icon ion-md-arrow-forward"></i></h6>
+                    </a>
+                    <p>软考真题</p>
+                    <p>软件安装</p>
+                    <p>如来佛组Plus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</skill>
+
+<section id="item" class="bg-light">
+    <div class="container">
+        <h3>这是我们基于SSM框架开发的BBS项目.</h3>
+        <p class="topmargin-sm">持续迭代，不断更新！</p>
+        <div class="row topmargin-lg">
+            <div class="col-md-4">
+                <div class="item-container">
+                    <div class="item-header">
+                        <h3>coding</h3>
+                        <p>支持多人在线。。。</p>
+                    </div>
+                    <div class="item-body">
+                        <ul>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>Git/SVN 代码托管、项目协同</li>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>一站式软件研发管理协作平台</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-container">
+                    <div class="item-header">
+                        <h3>我们是如来佛组plus</h3>
+                        <p>我们喜欢带着笔记本仗剑天涯。。。</p>
+                    </div>
+                    <div class="item-body">
+                        <ul>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>等待着同样喜欢仗剑的你</li>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>喝喝茶 聊聊天 写写代码。。。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-container">
+                    <div class="item-header">
+                        <h3>敬请期待</h3>
+                        <p>我们正努力开发更多开源项目。。。</p>
+                    </div>
+                    <div class="item-body">
+                        <ul>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>拭目以待 未完待续 稍安勿躁 翘首以待</li>
+                            <li><i class="icon ion-md-checkmark-circle-outline"></i>如有疑问 请追问。。。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact">
+    <div class="container text-center">
+        <h4>战略合作伙伴</h4>
+        <p>如果想更深层次了解我们的BBS请您联系我们
+            <br>或者想加入我们，那么请联系我们^_^
+        </p>
+        <div class="row link topmargin-lg">
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/%E5%8D%97%E7%93%9C%E8%A7%86%E9%A2%91.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/%E5%B0%8F%E7%BA%A2%E4%B9%A6.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/%E5%BF%AB%E6%89%8B.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/%E5%BD%93%E5%BD%93.png"/>
+            </div>
+        </div>
+        <div class="row link topmargin-lg">
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/中国平安.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/魅族.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/蜻蜓FM.png"/>
+            </div>
+            <div class="col-md-3">
+                <img alt="加入" src="https://www.upyun.com/static/logos/贝贝.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="copyright" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-success"><a target="_blank" href="#">如来佛组Plus！</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center"><img alt="#" src="images/avatar/logo.png" class="logo"></div>
+
+            <!-- <div class="col-md-4">
+                <ul class="list-inline tright">
+                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <small>Copyright © 2020 如来佛组Plus</small>
+                <br>
+                <small>www.bbs.codingce.com All Rights Reserved <a target="_blank" href="#">网站备案：津ICP备19009605号</a></small>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
