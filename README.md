@@ -8,16 +8,16 @@
 
 ### 项目主要的依赖
 ### 后端
-SpringBoot 2.3.0
-MySQL 5.7
-MyBatisPlus 3.0.5
-swagger
-fastjson
-thymeleaf
-editormd
-layer
-bootstrap
-springsecurity
+SpringBoot 2.3.0   
+MySQL 5.7   
+MyBatisPlus 3.0.5   
+swagger   
+fastjson   
+thymeleaf   
+editormd   
+layer   
+bootstrap   
+springsecurity   
 代码自动生成
 
 ### 前端
@@ -28,7 +28,7 @@ bootstrap
 thymeleaf
 
 # swagger-ui访问地址
-http://localhost:8091/swagger-ui.html
+http://localhost:8091/swagger-ui.html   
 
 ### 目录说明
 ```shell script
