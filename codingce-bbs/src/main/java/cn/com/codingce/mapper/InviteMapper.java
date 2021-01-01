@@ -1,6 +1,6 @@
 package cn.com.codingce.mapper;
 
-import cn.com.codingce.pojo.User;
+import cn.com.codingce.pojo.Invite;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,5 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Ma Xinze
  * @since 2021-1-1
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface InviteMapper extends BaseMapper<Invite> {
+
 }

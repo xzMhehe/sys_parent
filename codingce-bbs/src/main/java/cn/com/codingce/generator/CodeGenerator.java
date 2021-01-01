@@ -10,6 +10,14 @@ import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
+/**
+ * <p>
+ *  代码自动生成
+ * </p>
+ *
+ * @author Ma Xinze
+ * @since 2021-1-1
+ */
 public class CodeGenerator {
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package cn.com.codingce.service;
 
-import cn.com.codingce.pojo.User;
+import cn.com.codingce.pojo.UserInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,5 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Ma Xinze
  * @since 2021-1-1
  */
-public interface UserService extends IService<User> {
+public interface UserInfoService extends IService<UserInfo> {
+
 }
