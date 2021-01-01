@@ -28,22 +28,26 @@ http://localhost:8091/swagger-ui.html
 
 ### 目录说明
 ```shell script
+sys_parent
+  codingce-api
 src/main/java/com/codingce
-- config        配置类
-- controller    controller
-- generator     代码生成器
-- mapper        mapper
-- pojo          pojo
-- result        统一返回结果
-- service       service
-- utils         工具类
-- vo            vo对象
-CodingceApplication   启动类
-
-src/resources
-- static        静态资源
-- templates     页面模板
-- application-dev.properties   配置文件
-
-codingcestudy.sql   数据库文件
+    - pojo          pojo 实体类
+  codingce-bbs
+    src/main/java/com/codingce
+    - config        配置类
+    - controller    controller
+    - generator     代码生成器
+    - mapper        mapper
+    - result        统一返回结果
+    - service       service
+    - utils         工具类
+    - vo            vo对象
+    CodingceApplication   启动类
+    
+    src/resources
+    - static        静态资源
+    - templates     页面模板
+    - application-dev.properties   配置文件
+    
+    codingcestudy.sql   数据库文件
 ```
