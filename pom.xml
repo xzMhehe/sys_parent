@@ -18,6 +18,8 @@
     <modules>
         <module>codingce-bbs</module>
         <module>codingce-api</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
     <!--打包方式-->
